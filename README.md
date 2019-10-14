@@ -1,4 +1,4 @@
-## Image Search Bar app built with React JS
+## Teact Pictures App, an image search bar built with React JS
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

@@ -5,12 +5,13 @@ import React, { Component } from 'react'
 export default class SearchBar extends Component {
     
   state = {
-      turn: ''
+      term: ''
   }
 
   onFormSubmit = e => {
       e.preventDefault();
-      console.log(this.state.turn)
+      
+      this.props.onSubmit(this.state.term)
   }
     
     render() {
@@ -21,8 +22,8 @@ export default class SearchBar extends Component {
                         <label>Image Search</label>
                         <input 
                             type="text" 
-                            value={this.state.turn} 
-                            onChange={(e) => this.setState({turn: e.target.value})} 
+                            value={this.state.term} 
+                            onChange={(e) => this.setState({term: e.target.value})} 
                             />  
                     </div> 
                 </form>
